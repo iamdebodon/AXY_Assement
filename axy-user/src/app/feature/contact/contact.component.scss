@@ -1,0 +1,11 @@
+.link {
+  color: blue;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+input {
+  width: 50%;
+ }

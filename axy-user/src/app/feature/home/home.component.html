@@ -1,0 +1,17 @@
+<div *ngIf="!companiesDetail">
+  <loader></loader>
+</div>
+<div class="row col-12">
+  <div *ngFor="let company of companiesDetail" class="col-sm-6 p-2">
+    <div class="card">
+      <h5 class="card-title text-center p-2">{{company?.name}}</h5>
+      <div class="card-body text-center">
+        <img style="width: 10rem;" class="card-img-top" [attr.src]="company?.logo" [attr.alt]="company?.logo">
+        <div class="card-body">
+          <p class="card-text ">{{company?.description}}</p>
+        </div>
+        <div (click)="contactPersons()" class="btn btn-primary">Contact Person</div>
+      </div>
+    </div>
+  </div>
+</div>

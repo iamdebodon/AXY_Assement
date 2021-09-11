@@ -1,0 +1,3 @@
+<div *ngIf="formGroup?.controls[fieldName]?.touched && formGroup?.controls[fieldName]?.errors" class="invalid-feedback">
+  <div *ngIf="formGroup?.controls[fieldName]?.errors?.required"><strong>{{errorLabel}}</strong> is required</div>
+</div>
